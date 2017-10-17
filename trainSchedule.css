@@ -1,0 +1,50 @@
+body {
+    background: url("./train.jpeg");
+    background-repeat: no-repeat;
+}
+
+#train-table {
+    color: #8a6d3b;
+    background-color: #f0ad4e;
+    border-color: #faebcc;
+}
+
+#test {
+    background-size: cover;
+    background-position: center center;
+    color: Darkorange;
+    position: relative;
+    text-align: center;
+}
+
+.jumbotron h1,
+{
+    background-color: black;
+}
+
+#navigation {
+    margin: 0 auto 0;
+    font-size: 13px;
+    width: 100%;
+    margin-left: Auto;
+    text-align: center;
+    font-size: 35px;
+    display: inline-block;
+    color: inhert;
+    border: solid;
+}
+
+#sub-head {
+    color: white;
+    text-align: center;
+}
+
+#test:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    text-align: center;
+    font-size: 200px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <script rel="stylesheet" type="text/css" href="trainSchedule.css"></script>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" id="test">
+            <h1 class="display-3">City of Charlotte Light Train System</h1>
+            <strong><a id="sub-head"> Your Ride is Here, All Aboard </a></strong>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <nav id="navigation">
+
+                            <a href="https://www.amtrak.com/routes.html">Train Map Across USA</a>
+                            <a href="http://charlottenc.gov/cats/fares/fares-passes/Pages/lynx-fares.aspx">Train Ticket</a>
+                            <a href="http://charlottenc.gov/cats/Pages/default.aspx">Charlotte Transportation</a>
+                            <a href="http://charlottenc.gov/cats/about/Pages/customer-service.aspx">Contact</a>
+
+                        </nav>
+                    </div>
+                </div>
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>Train Schedule Information</strong></h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-hover" id='train-table'>
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency (min)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--tables rows will dynamically generate using javascript, so check how it works-->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>Where you want to go, Please add your Train Information</strong></h3>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="train-name-input">Train Name</label>
+                                <input class="form-control" id="train-name-input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="destination-input">Destination</label>
+                                <input class="form-control" id="destination-input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="first-train-input">First Train Time (HH:mm - military time)</label>
+                                <input class="form-control" id="first-train-input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="frequency-input">Frequency (min)</label>
+                                <input class="form-control" id="frequency-input" type="text">
+                            </div>
+                            <button class="btn btn-warning" id="add-train-btn" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="trainSchedule.js"></script>
+</body>
+
+</html>

@@ -1,10 +1,10 @@
+
 body {
-    background: url("./train.jpeg");
-    background-repeat: no-repeat;
+    background: #000
 }
 
 #train-table {
-    color: #8a6d3b;
+    color:inherit;
     background-color: #f0ad4e;
     border-color: #faebcc;
 }
@@ -12,14 +12,27 @@ body {
 #test {
     background-size: cover;
     background-position: center center;
-    color: Darkorange;
+    color: orange;
     position: relative;
     text-align: center;
+
 }
 
-.jumbotron h1,
+#jumbo-head
 {
-    background-color: black;
+
+    background-image: url('train3.jpg');
+    /*background-repeat: no-repeat;*/
+    padding-right: 0px;
+    margin-right: 0%
+
+
+}
+.jumbotron{
+    padding-bottom: 60px
+}
+#train3 {
+    max-width: 100%
 }
 
 #navigation {
@@ -28,15 +41,19 @@ body {
     width: 100%;
     margin-left: Auto;
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     display: inline-block;
-    color: inhert;
-    border: solid;
+    padding: 15px;
+    color: orange
+
+}
+#map, #ticket, #transportation,#cont, #sub-head{
+    color: orange
 }
 
 #sub-head {
-    color: white;
     text-align: center;
+    font-style: italic
 }
 
 #test:hover .overlay {
@@ -48,3 +65,4 @@ body {
     text-align: center;
     font-size: 200px;
 }
+
